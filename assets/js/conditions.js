@@ -33,11 +33,35 @@
 
 // document.write(`<p>User is <span style="color:${color};">${status}</span></p>`);
 
-const isOnline = false;
-const color = isOnline ? "green" : "red";
-console.log("color :>> ", color);
+// const isOnline = false;
+// const color = isOnline ? "green" : "red";
+// console.log("color :>> ", color);
 
-const status = isOnline ? "online" : "offline";
-console.log("status :>>", status);
+// // умовна операція
+// // const status = isOnline ? "online" : "offline";
+// // console.log("status :>>", status);
 
-document.write(`<p>User is <span style="color:${color};">${status}</span></p>`);
+// єдине джерело істини
+// // document.write(`<p>User is <span style="color:${color};">${status}</span></p>`);
+
+// //оператори порівняння
+// const age = 18;
+// console.log("isAdult", age >= 18);
+
+// if (age >= 18) {
+//   document.write("<p> у вас є доступ</p>");
+// } else {
+//   document.write("<p>немає доступу</p>");
+// }
+
+const isMale = true;
+const isMarried = true;
+const name = `Test`;
+
+if (isMale) {
+  document.write(`<p> Hello Mr ${name}`);
+} else if (isMale === false && isMarried) {
+  document.write(`<p> Hello Mrs ${name}`);
+} else {
+  document.write(`<p> Hello Ms ${name}`);
+}
