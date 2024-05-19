@@ -106,21 +106,27 @@ const user = {
   //   getFullName: function () {
   //     return `${user.fistName} ${user.lastName}`;
   //   },
-  //   getFullName() {
-  //     // console.log("this :>>", this)
-  //     return `${this.fistName} ${this.lastName}`;
-  //   },
-  getFullName: getFullName,
+  getFullName() {
+    // console.log("this :>>", this)
+    return `${this.fistName} ${this.lastName}`;
+  },
+  //   getFullName: getFullName,
+  changePassw(newPassw) {
+    this.passw = newPassw;
+  },
 };
 
-const user1 = {
-  fistName: "Test1",
-  lastName: "Testovych1",
-  passw: "jfkjf1",
-  age: 20,
-  getFullName,
-};
+// const user1 = {
+//   fistName: "Test1",
+//   lastName: "Testovych1",
+//   passw: "jfkjf1",
+//   age: 20,
+//   getFullName,
+// };
 console.log(user.getFullName());
-console.log(user1.getFullName());
+// console.log(user1.getFullName());
+
+user.changePassw(prompt("new password"));
+console.log("user :>> ", user);
 
 document.write(`<h2> ${user.getFullName()}</h2>`);
