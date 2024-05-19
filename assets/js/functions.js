@@ -56,28 +56,28 @@
 //   news(newsTitle3, newsBody3, newsDate3)
 // );
 
-// типові значення
-function pow(a, exp = 2) {
-  return a ** exp;
-}
-console.log(pow(4));
-console.log(pow(4, 3));
+// // типові значення
+// function pow(a, exp = 2) {
+//   return a ** exp;
+// }
+// console.log(pow(4));
+// console.log(pow(4, 3));
 
-// console.log(pow(3));
-// console.log(pow(3, 4));
+// // console.log(pow(3));
+// // console.log(pow(3, 4));
 
-/**
- * @function userCard
- * @param {string} name - user name
- * @param {string} [surname = "anonimus"] - user surname
- * @returns {string}  user's name and  surname
- */
+// /**
+//  * @function userCard
+//  * @param {string} name - user name
+//  * @param {string} [surname = "anonimus"] - user surname
+//  * @returns {string}  user's name and  surname
+//  */
 
-function userCard(name, surname = "anonimus") {
-  return `
-      <article>
-        <h2>${name} ${surname}</h2>
-      </article>`;
-}
+// function userCard(name, surname = "anonimus") {
+//   return `
+//       <article>
+//         <h2>${name} ${surname}</h2>
+//       </article>`;
+// }
 
-document.write(userCard("Lidiia"));
+// document.write(userCard("Lidiia"));
