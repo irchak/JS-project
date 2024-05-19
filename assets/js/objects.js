@@ -95,38 +95,100 @@
 // console.log("correctNewsCopy2 === news :>> ", correctNewsCopy2 === news);
 
 //Методи
-function getFullName() {
-  return `${this.fistName} ${this.lastName}`;
+// function getFullName() {
+//   return `${this.fistName} ${this.lastName}`;
+// }
+// const user = {
+//   fistName: "Test",
+//   lastName: "Testovych",
+//   passw: "jfkjf",
+//   age: 23,
+
+//   getFullName() {
+//     return `${this.fistName} ${this.lastName}`;
+//   },
+//   changePassw(newPassw) {
+//     this.passw = newPassw;
+//   },
+// };
+// console.log(user.getFullName());
+
+// user.changePassw(prompt("new password"));
+// console.log("user :>> ", user);
+
+// document.write(`<h2> ${user.getFullName()}</h2>`);
+
+// // //exampe2
+// const car = {
+//   name: "Kia",
+//   model: "Rio x",
+//   year: 2022,
+//   color: "silver",
+//   owner: {
+//     firstName: "Cat",
+//     lastName: "Noris",
+//   },
+//   changeColor(newColor) {
+//     this.color = newColor;
+//   },
+//   getAge() {
+//     return new Date().getFullYear() - this.year;
+//   },
+// };
+// console.dir(car);
+// console.dir(car.getAge);
+// console.dir(new Date());
+
+// car.changeColor(prompt("Inpun new color: ", "yellow"));
+// console.log("car :>> ", car);
+
+//перебір обʼєктів
+// for (const key in car) {
+//   console.log("key :>> ", key, car[key]);
+// }
+// //обчислювальні властивості - car[key]
+// const propName = `color`;
+// console.log("color:", car[propName]);
+
+//ввести для обʼєкту 3 імені властивості і імена до них
+
+// const cat = {};
+
+// for (let i = 0; i < 3; i++) {
+//   let key = prompt("Enter the key");
+//   let value = prompt("Enter the value");
+//   cat[key] = value;
+// }
+
+//функція-конструктор
+function User(name, surName, userAge, userEmail, isMale) {
+  //   const this = {};
+  this.firstName = name;
+  this.lastName = surName;
+  this.age = userAge;
+  this.email = userEmail;
+  this.isMale = isMale;
+  this.chengeEmail = function (newEmail) {
+    // this.email = newEmail;
+  };
+  //   return this;
 }
-const user = {
-  fistName: "Test",
-  lastName: "Testovych",
-  passw: "jfkjf",
-  age: 23,
-  //   getFullName: function () {
-  //     return `${user.fistName} ${user.lastName}`;
-  //   },
-  getFullName() {
-    // console.log("this :>>", this)
-    return `${this.fistName} ${this.lastName}`;
-  },
-  //   getFullName: getFullName,
-  changePassw(newPassw) {
-    this.passw = newPassw;
-  },
+
+User.prototype.chengeEmail = function (newEmail) {
+  this.email = newEmail;
 };
 
-// const user1 = {
-//   fistName: "Test1",
-//   lastName: "Testovych1",
-//   passw: "jfkjf1",
-//   age: 20,
-//   getFullName,
-// };
-console.log(user.getFullName());
-// console.log(user1.getFullName());
+const user1 = new User(`Test`, `Testovych`, 23, `mail@main.com`, true);
+const user2 = new User("Anna", "Robot", 15, "anna@mail.com", true);
+user1.chengeEmail("newmail@com");
 
-user.changePassw(prompt("new password"));
-console.log("user :>> ", user);
+console.log("user1 :>> ", user1);
 
-document.write(`<h2> ${user.getFullName()}</h2>`);
+// function Cat(name, surName, userAge) {
+//   this.firstName = name;
+//   this.lastName = surName;
+//   this.age = userAge;
+// }
+
+// const cat1 = new Cat(`Noris`, `Irchak`, 2);
+// console.log("cat1 :>>", cat1);
