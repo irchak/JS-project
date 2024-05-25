@@ -160,29 +160,29 @@
 //   cat[key] = value;
 // }
 
-//функція-конструктор
-function User(name, surName, userAge, userEmail, isMale) {
-  //   const this = {};
-  this.firstName = name;
-  this.lastName = surName;
-  this.age = userAge;
-  this.email = userEmail;
-  this.isMale = isMale;
-  this.chengeEmail = function (newEmail) {
-    // this.email = newEmail;
-  };
-  //   return this;
-}
+// //функція-конструктор
+// function User(name, surName, userAge, userEmail, isMale) {
+//   //   const this = {};
+//   this.firstName = name;
+//   this.lastName = surName;
+//   this.age = userAge;
+//   this.email = userEmail;
+//   this.isMale = isMale;
+//   this.chengeEmail = function (newEmail) {
+//     // this.email = newEmail;
+//   };
+//   //   return this;
+// }
 
-User.prototype.chengeEmail = function (newEmail) {
-  this.email = newEmail;
-};
+// User.prototype.chengeEmail = function (newEmail) {
+//   this.email = newEmail;
+// };
 
-const user1 = new User(`Test`, `Testovych`, 23, `mail@main.com`, true);
-const user2 = new User("Anna", "Robot", 15, "anna@mail.com", true);
-user1.chengeEmail("newmail@com");
+// const user1 = new User(`Test`, `Testovych`, 23, `mail@main.com`, true);
+// const user2 = new User("Anna", "Robot", 15, "anna@mail.com", true);
+// user1.chengeEmail("newmail@com");
 
-console.log("user1 :>> ", user1);
+// console.log("user1 :>> ", user1);
 
 // function Cat(name, surName, userAge) {
 //   this.firstName = name;

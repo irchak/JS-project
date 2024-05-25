@@ -54,14 +54,14 @@
 //   document.write("<p>немає доступу</p>");
 // }
 
-const isMale = true;
-const isMarried = true;
-const name = `Test`;
+// const isMale = true;
+// const isMarried = true;
+// const name = `Test`;
 
-if (isMale) {
-  document.write(`<p> Hello Mr ${name}`);
-} else if (isMale === false && isMarried) {
-  document.write(`<p> Hello Mrs ${name}`);
-} else {
-  document.write(`<p> Hello Ms ${name}`);
-}
+// if (isMale) {
+//   document.write(`<p> Hello Mr ${name}`);
+// } else if (isMale === false && isMarried) {
+//   document.write(`<p> Hello Mrs ${name}`);
+// } else {
+//   document.write(`<p> Hello Ms ${name}`);
+// }
