@@ -6,12 +6,12 @@
 //   return a + b;
 // };
 
-const isAdult = (age) => {
-  return age >= 18;
-};
+// const isAdult = (age) => {
+//   return age >= 18;
+// };
 
-//2
-const sum = (a, b) => a + b;
+// //2
+// const sum = (a, b) => a + b;
 
 // Обмеження:
 // 1 Нема arguments

@@ -207,3 +207,157 @@
 // const deletedMessagesIndex = findIndexById(messages, 2);
 // messages.splice(deletedMessagesIndex, 1);
 // console.table(messages);
+
+// //методи пребору масивів
+// //Колбек
+// // Колбек - це функція, яка передається до іншої функції і виконується в ній
+
+// function functionWithCB(cb, value) {
+//   cb(value);
+// }
+// functionWithCB(alert, "Hello");
+// functionWithCB(console.log, "Hello with clg");
+
+// //
+// const arr = [1, 2, 3, 4];
+// function printElement(currentValue, index, array) {
+//   console.log("currentValue :>>", currentValue);
+//   console.log("index :>>", index);
+//   console.log("array :>>", array);
+// }
+
+// arr.forEach(printElement);
+
+// // Array.prototype.forEach(cb){
+// //     for (let i=0; i<this.length, i++){
+// //         cb(this[i], i, this)
+// //     }
+// // }
+
+// //Додати в розмітку за допомогою forEach
+// const months = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+// function monthsElement(months) {
+//   document.write(`
+//     <li>${months}</li>
+//     `);
+// }
+// document.write(`<ol>`);
+// months.forEach(monthsElement);
+// document.write(`</ol>`);
+
+// //map =>
+// const arr = [1, -2, 3, 4];
+// function toSqr(currentValue, index, array) {
+//   return currentValue ** 2;
+// }
+// const arr2 = arr.map(toSqr);
+// console.log(arr2);
+
+// // Task: отримати елементи з вихідного, змінивши знаки елементам
+// function toMin(value) {
+//   return value * -1;
+// }
+
+// const arr3 = arr.map(toMin);
+// console.log(arr3);
+
+// const arr4 = arr.map((a) => -a);
+// console.log(arr4);
+
+// const months = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+// function generateList(m) {
+//   return `<li>${m}</li>`;
+// }
+// // const months1 = months.map(generateList);
+// // [
+// //   `<li>"January"</li>`,
+// //   `<li>"February"</li>`,
+// //   `<li>"March"</li>`,
+// // ];
+// document.write(`<ol>
+// ${months.map(generateList).join("")}
+// </ol>`);
+
+// // Task: отримати масив з іменами користувачів
+// const users = [
+//   { id: 1, name: "Test", age: 15 },
+//   { id: 2, name: "Ivo", age: 30 },
+// ]; // ['Test', 'Ivo']
+// const userNames = users.map(user => user.name);
+// console.log(userNames);
+
+// //Filter
+// const numbers = [0, -8, 6, -10, 5, 11];
+
+// function isOdd(n) {
+//   return n % 2 === 1;
+// }
+
+// const oddNumbers = numbers.filter(isOdd);
+// console.log(oddNumbers);
+
+// //Вивести повнолітніх користувачів
+// const users = [
+//   { id: 1, name: "Test", age: 15 },
+//   { id: 2, name: "Ivo", age: 30 },
+// ];
+
+// function isAdult(u) {
+//   return u.age >= 18;
+// }
+// const oddAdult = users.filter(isAdult);
+// console.log(oddAdult);
+
+// //findIndex
+// const numbers = [0, -8, 6, -10, 5, 11];
+
+// function isSix(n) {
+//   return n === 6;
+// }
+// const foundIndex = numbers.findIndex(isSix);
+// console.log(foundIndex);
+
+// //змінити вік користувача  1 на 16
+// const users = [
+//   { id: 1, name: "Test", age: 15 },
+//   { id: 2, name: "Ivo", age: 30 },
+// ];
+
+// //Знайти індекс
+// function findUserById(u) {
+//   return u.id === 1;
+// }
+// const fuondUserIndex = users.findIndex(findUserById);
+
+// // змінити дані
+// // users[fuondUserIndex].age = 16;
+// if (fuondUserIndex !== -1) {
+//   const updateData = { age: 16 };
+//   users[fuondUserIndex] = { ...users[fuondUserIndex], ...updateData };
+// }
