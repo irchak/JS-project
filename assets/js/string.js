@@ -29,28 +29,28 @@
 
 // console.log(getInitials("Ivo Smith"));
 
-//Замінити в рядку всі нецензурні ввирази
-let messages = [
-  {
-    id: 1,
-    body: "Lorem fuck dolor sit amet, consectetur fuck elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    createdAt: "2024-05-01",
-  },
-  {
-    id: 2,
-    body: "Ut enim ad minim veniam, quis fuck exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    createdAt: "2024-05-02",
-  },
-  {
-    id: 3,
-    body: "Duis aute irure fuck in reprehenderit in fuck velit esse cillum dolore eu fugiat nulla pariatur.",
-    createdAt: "2024-05-03",
-  },
-];
+// //Замінити в рядку всі нецензурні ввирази
+// let messages = [
+//   {
+//     id: 1,
+//     body: "Lorem fuck dolor sit amet, consectetur fuck elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+//     createdAt: "2024-05-01",
+//   },
+//   {
+//     id: 2,
+//     body: "Ut enim ad minim veniam, quis fuck exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+//     createdAt: "2024-05-02",
+//   },
+//   {
+//     id: 3,
+//     body: "Duis aute irure fuck in reprehenderit in fuck velit esse cillum dolore eu fugiat nulla pariatur.",
+//     createdAt: "2024-05-03",
+//   },
+// ];
 
-const newMessages = messages[2].body.replaceAll("fuck", "***");
+// const newMessages = messages[2].body.replaceAll("fuck", "***");
 
-const gentalMessages = messages.map(m => ({
-  ...m,
-  body: m.body.replaceAll("fuck", "***"),
-}));
+// const gentalMessages = messages.map(m => ({
+//   ...m,
+//   body: m.body.replaceAll("fuck", "***"),
+// }));
